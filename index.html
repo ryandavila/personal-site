@@ -2,12 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ryan davila</title>
+    <title>Ryan Davila - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+
+      <header>
+        <h1>Ryan Davila</h1>
+        <p class="subtitle">Software Engineer</p>
+      </header>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="assets/ryan.jpeg" alt="Ryan Davila" class="avatar" />
+          <div class="about-text">
+            <p class="about-placeholder">
+              My bio is a perpetual work in progress, but I like most things
+              technology. I tend to spend a bit too much time optimizing my
+              personal dev setup and dotfiles, as well as trying out new
+              operating systems.
+            </p>
+            <p class="about-placeholder">
+              Outside of work and side projects, I love animals and I tend to
+              enjoy working on my car or skiing if it's the right season.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Side Projects</h2>
+
+        <div class="project-card">
+          <h3>tutel.rocks</h3>
+          <p>
+            I happened upon a pet turtle and I wanted an easier way to check in
+            on him when I'm not around, but the camera app I use is a bit
+            clunky. So I made a website to live stream his antics for my own
+            viewing, and for my friends when they're bored. (Be warned, turtles
+            really don't do a lot...)
+          </p>
+          <p>
+            I'm working on a way to have this more widely accessible, but the
+            internet is a scary place to have a feed of your turtle for anyone
+            to see. For now, you have to know me to have access.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>NAS + Homelab</h3>
+          <p>
+            I like to self-host things! It sprung from me wanting to learn more
+            about networking and rolling OpenWRT on my router, and then I
+            wondered if I could host a server. Now I host multiple with various
+            useful technologies such as:
+          </p>
+          <ul class="tech-list">
+            <li>Immich</li>
+            <li>Jellyfin</li>
+            <li>
+              <span class="strikethrough">Calibre</span> → Komga (it's better
+              for comics, and imo, looks nicer)
+            </li>
+            <li>Homepage</li>
+            <li>PiHole</li>
+            <li>Portainer</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="qna">
+        <h2>Q&A</h2>
+
+        <div class="qna-item">
+          <h3>What kind of work do you enjoy?</h3>
+          <p>
+            I like learning new technologies in general, but I tend to enjoy
+            working on extensible backends and system design, with a bit of
+            infrastructure as I get to learn how things really work inside.
+          </p>
+        </div>
+
+        <div class="qna-item">
+          <h3>Why is your LinkedIn empty?</h3>
+          <p>
+            Good question. Turns out LinkedIn really respects data privacy (+1)
+            so when I deactivated it a couple years ago, all my data was wiped.
+            And well, I don't have much of an interest in what gets posted on
+            there anyways. If you want to keep in touch, feel free to email me
+            or ask me for my Discord handle.
+          </p>
+        </div>
+
+        <div class="qna-item">
+          <h3>What are you currently learning or working on?</h3>
+          <p>
+            I'm loosely trying to learn more about IoT automation, and after not
+            loving home assistant, I'm trying to work on an OSS repo I worked
+            called Kasa-Nice to have a barebones dashboard to handle my home
+            devices. Turns out turtle care requires a lot of timing with respect
+            to heaters and lighting.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          <a href="mailto:contact@ryandavila.com">contact@ryandavila.com</a> •
+          <a href="https://github.com/ryandavila" target="_blank">GitHub</a>
+        </p>
+      </section>
+    </div>
   </body>
 </html>
