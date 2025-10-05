@@ -116,10 +116,19 @@
       <section id="contact">
         <h2>Get in Touch</h2>
         <p>
-          <a href="mailto:contact@ryandavila.com">contact@ryandavila.com</a> •
+          <a href="#" id="email-link">contact[at]ryandavila[dot]com</a> •
           <a href="https://github.com/ryandavila" target="_blank">GitHub</a>
         </p>
       </section>
     </div>
+    <script>
+      document
+        .getElementById("email-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          window.location.href =
+            "mailto:" + "contact" + "@" + "ryandavila" + "." + "com";
+        });
+    </script>
   </body>
 </html>
